@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* --- HERO (SECCIÓN 1) --- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    background: #333 url('assets/main-hero-background.png') no-repeat center / cover;
+    color: #fff;
+    padding: 30px 40px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero-content {
+    max-width: 550px;
+    margin-top: 130px;
+}
+
+.hero-content img {
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.subscribe-box {
+    display: flex;
+    max-width: 480px;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 14px 16px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    border-radius: 4px 0 0 4px;
+}
+
+.subscribe-box button {
+    background: #1cd1e5;
+    color: #032541;
+    border: none;
+    padding: 0 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 0 4px 4px 0;
+}
+
+.save-text {
+    font-size: 13px;
+    margin-top: 15px;
+    color: white;
+}
+
+.save-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.details-link {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 6px;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.brands img {
+    height: 22px;
+}
+
+/* --- SOLO EN DISNEY+ (SECCIÓN 2) --- */
+.sec2 {
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.textoheader {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+    text-align: left;   
+}
+
+.textoheader h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.textoheader p {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+
+.poster {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    background: #333 url('assets/starwars.png') no-repeat center / cover;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+}
+
+.postertexto {
+    padding-left: 50px;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.3;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+/* --- FILA DE PELÍCULAS (SECCIÓN 3) --- */
+.seccion3 {
+    padding: 40px 40px 80px 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.fila-peliculas {
+    display: flex;
+    gap: 15px;
+    max-width: 1100px;
+    overflow-x: auto; /* Permite scroll horizontal si los posters exceden la pantalla */
+}
+
+.tarjeta-pelicula {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-poster {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    background-color: #1a1a1a;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.contenedor-poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.contenedor-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.numero-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, rgba(4, 30, 40, 0.95) 50%, transparent 50%);
+    color: #1cd1e5;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 6px;
+    padding-left: 8px;
+}
+
+.titulo-pelicula {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* --- TABLA DE PLANES (SECCIÓN 4) --- */
+.seccion4 {
+    padding: 80px 20px;
+    background-color: #040714;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-planes {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.subtitulo-planes {
+    font-size: 15px;
+    color: #c0c0c0;
+    margin-bottom: 40px;
+}
+
+.contenedor-tabla {
+    width: 100%;
+    max-width: 1100px;
+    overflow-x: auto;
+}
+
+.tabla-planes {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #ffffff;
+}
+
+.tabla-planes th,
+.tabla-planes td {
+    border: 1px solid #31343e;
+    padding: 22px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabla-planes .celda-caracteristica {
+    text-align: left;
+    font-weight: 700;
+    font-size: 13px;
+    width: 40%;
+    border-left: none;
+}
+
+.tabla-planes tr td:last-child {
+    border-right: none;
+}
+
+.tabla-planes th {
+    border-top: none;
+    padding: 30px 15px;
+}
+
+.celda-vacia {
+    border: none !important;
+    background-color: transparent;
+}
+
+.cabecera-premium {
+    background-color: #0072ff;
+    border-radius: 6px 6px 0 0;
+    font-size: 15px;
+    font-weight: 800;
+    border: 1px solid #0072ff !important;
+}
+
+.cabecera-estandar,
+.cabecera-anuncios {
+    background-color: #1a1c23;
+    border-radius: 6px 6px 0 0;
+    font-size: 13px;
+    font-weight: 800;
+    border-bottom: none !important;
+}
+
+.fila-precios td {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.icono-palomita {
+    color: #00e700;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icono-guion {
+    color: #ff0000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.texto-numero {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* --- DEPORTES (SECCIÓN 5) --- */
+.seccion5 {
+    padding: 60px 20px;
+    background-color: #040714;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-deportes {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera-deportes {
+    margin-bottom: 30px;
+}
+
+.cabecera-deportes h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.cabecera-deportes p {
+    font-size: 15px;
+    color: #c0c0c0;
+}
+
+.cuadricula-deportes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.tarjeta-deporte {
+    width: calc(25% - 12px);
+    min-width: 220px;
+    aspect-ratio: 16 / 9;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta-deporte:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.tarjeta-deporte img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- DISPOSITIVOS Y FOOTER (SECCIÓN 6 Y 7) --- */
+.seccion6 {
+    padding: 80px 20px;
+    background-color: #040714;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-dispositivos {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.subtitulo-dispositivos {
+    font-size: 16px;
+    color: #c0c0c0;
+    margin-bottom: 50px;
+}
+
+.contenedor-dispositivos {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-dispositivos {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: #1a1c23;
+    border: none;
+}
+
+footer {
+    background-color: #040714;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.derechos {
+    color: #c0c0c0;
+    font-size: 12px;
+    font-weight: 400;
+}
