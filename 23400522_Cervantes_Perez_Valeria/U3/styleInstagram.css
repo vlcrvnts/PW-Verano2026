@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Figtree', BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  height: 100vh;
+}
+
+.division {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.div-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.logo {
+  width: 65px;
+  margin-bottom: 24px;
+}
+
+.col-izq {
+  flex: 1;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.cont-izq {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.slogan {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.deco {
+  
+  width: 80%;
+  margin-top: 30px;
+}
+
+.col-der {
+  flex: 1;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.form input {
+  width: 100%;
+  max-width: 600px;
+  padding: 16px 14px;
+  background-color: transparent;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #555555;
+}
+
+.btn-loginfb, .btn-crearcuenta, .olvido{
+  width: 100%;
+  border-radius: 20px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-login {
+  background-color: #004c8c;
+  color: #b3dbff;
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: not-allowed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.olvido {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 25px;
+  align-self: center;
+}
+
+.olvido:hover{
+  background-color: #6f6f6f;
+}
+
+.btn-loginfb {
+  background-color: transparent;
+  border: 1px solid #363636;
+  color: #ffffff;
+  padding: 14px;
+  border-radius: 20px;
+}
+
+.btn-loginfb:hover{
+  background-color: #6f6f6f;
+}
+.btn-crearcuenta {
+  background-color: transparent;
+  color: skyblue;
+  border: 1px solid skyblue;
+  padding: 14px;
+  border-radius: 20px;
+}
+
+.btn-crearcuenta:hover{
+  background-color: #6f6f6f;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #363636;
+  width: 100%;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background-color: #000000;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.nav a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.derechos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+}
+
+.derechos p {
+  color: #737373;
+  text-decoration: none;
+  font-size: 12px;
+}
