@@ -21,7 +21,7 @@ function aleatorio05(){
     do {
         n = Math.floor(Math.random()*6);
         console.log(n);
-    }while(n!=5)
+    }while(n!=0)
 }
 
 aleatorio05();
