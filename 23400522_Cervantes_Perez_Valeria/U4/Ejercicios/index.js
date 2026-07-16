@@ -101,3 +101,46 @@ let dobles = numeros.map(numero => {
     return numero*2;
 });
 console.log(dobles);
+
+console.log(typeof (10));
+console.log(typeof ("Hola"));
+console.log(typeof (true));
+console.log(typeof ({}));
+
+const edad = 17;
+const mensaje = edad >= 18 ? "Mayor" : "Menor de edad";
+console.log(mensaje);
+
+const estudiante = {
+    nombre : "Valeria"
+};
+
+console.log(estudiante.direccion?.calle);
+
+let nombre = "";
+console.log(nombre || "Invitado");
+
+let edad = 25;
+edad >= 18 && console.log("Puede entrar")
+
+let alumno = {
+    nombre: "Juan",
+    edad: 20,
+    carrera: "ISC"
+}
+
+delete alumno.edad
+console.log(alumno)
+console.log("nombre" in alumno)
+console.log("edad" in alumno)
+
+const numeros = [1, 2, 3];
+const copia = [...numeros]
+console.log(copia);
+
+const a = [1, 2]
+const b = [3, 4]
+const c = [...a, ...b]
+console.log(c);
+
+
