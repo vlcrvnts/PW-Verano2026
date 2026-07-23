@@ -1,4 +1,4 @@
-const API_URL = "https://api-sand-three-83.vercel.app";
+const API_URL = "https://api-sand-three-83.vercel.app/peliculas";
 
 const formulario = document.getElementById("formulario");
 const id = document.getElementById("id");
